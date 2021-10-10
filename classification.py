@@ -75,7 +75,7 @@ f_ind='Indices of Adversarial Images '
 ind=np.load(f_ind)
 y_test_recon_fgsm=np.zeros(fgsm.shape[0])
 z=0
-for i in range(1000,1800):
+for i in range(1000):
       y_test_recon_fgsm[z]=y_test[ind[i]]
       z+=1
 score = model.evaluate(fgsm, np_utils.to_categorical(y_test_recon_fgsm, 10), verbose=0)
