@@ -23,7 +23,7 @@ drive.mount('/content/drive')
 # Input following parameter values 
 N          # Dimension of signal for MNIST
 k          # Sparsity Assumed for MNIST
-t_L0       # Assuming 15 pixels are perturbed in L0 attack
+t_L0       # No. of pixels perturbed in L0 attack
 alpha     # Norm parameters bound
 beta      # Norm parameters bound
 m         # Norm parameters bound
@@ -38,7 +38,7 @@ F = dct(I, norm='ortho')
 T          #Total number of iterations assumed
 initial_iter  # No. of initial iteration assumed to solve optimisation problem 
   
-# perturbation level assumed for action1, action2, action3
+# perturbation level assumed for each action1, action2, action3
 eta1
 eta2
 eta3
