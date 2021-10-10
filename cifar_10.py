@@ -22,23 +22,23 @@ drive.mount('/content/drive')
 
 N        # Dimension of vector for Cifar10
 k        # Sparsity Assumed for Cifar10
-t_L0     # Assuming 15 pixels are perturbed in L0 attack
+t_L0     # No. of pixels perturbed in L0 attack
 alpha    # Norm parameters bound
 beta     # Norm parameters bound
 m        # Norm parameters bound
 theta1    # Mahalanobis distance parameter channel 1
-theta2    # Mahalanobis distance parameter channel 1
-theta3    # Mahalanobis distance parameter channel 1
+theta2    # Mahalanobis distance parameter channel 2
+theta3    # Mahalanobis distance parameter channel 3
 lamda    # weight parameter
 Delta    # Stopping Criterion for probability distribution
 delt     # Stopping Criterion for l2 norm residual error
 gamma    # Tuning Parameter for EXP3 algo
-sigma    # Tuning Parameter for EXP3 algo #0.0085
+sigma    # Tuning Parameter for EXP3 algo 
 I = np.identity(N)
 F = dct(I, norm='ortho')
 T        #Total number of iterations assumed
 initial_iter            # No. of initial iteration assumed to solve optimisation problem 
-# perturbation level assumed for action1, action2, action3
+# perturbation level assumed for each action1, action2, action3
 eta1
 eta2
 eta3
